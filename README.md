@@ -21,3 +21,17 @@ return res.end()
 server.listen(3000, () => {
   console.log(`server running on address http:/localhost:3000`);
 });
+
+
+in future using express then common code is 
+
+const express = require("express");
+const app = express();
+
+here come app.use() or app.get() or app.post()
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on address http://localhost:${PORT}`);
+});
+ 
